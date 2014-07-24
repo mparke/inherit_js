@@ -1,0 +1,21 @@
+{
+  "name": "inherit_js",
+  "version": "0.0.1",
+  "authors": [
+    "mparke <mparke78@gmail.com>"
+  ],
+  "description": "Inheritance CommonJS Module",
+  "main": "inherit.js",
+  "keywords": [
+    "inherit",
+    "inheritance"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
