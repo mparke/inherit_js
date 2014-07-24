@@ -1,4 +1,4 @@
-inherit_js
+inheritjs
 ==========
 
 Simple Inheritance Module
