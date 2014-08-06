@@ -1,0 +1,13 @@
+{
+  "name": "inheritjs",
+  "version": "0.0.1",
+  "description": "Inheritance Module",
+  "private": true,
+  "authors": [
+    "mparke <mparke78@gmail.com>"
+  ],
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-bump": "*"
+  }
+}
