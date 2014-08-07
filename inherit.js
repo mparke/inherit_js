@@ -1,3 +1,4 @@
+// @preserve inheritjs, copyright Matthew Parke 2014, license https://github.com/mparke/eventsjs/blob/master/LICENSE
 (function (window) {
   
   function inherit () {
