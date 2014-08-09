@@ -12,9 +12,9 @@
   }
 
   if (typeof module === 'object') {
-    define(function () { return inherit; });
-  } else if (typeof define === 'function') {
     module.exports = inherit;
+  } else if (typeof define === 'function') {
+    define(function () { return inherit; });
   } else {
     window.inherit = inherit;
   }

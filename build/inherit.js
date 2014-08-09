@@ -1,2 +1,2 @@
 // @preserve inheritjs, copyright Matthew Parke 2014, license https://github.com/mparke/eventsjs/blob/master/LICENSE
-!function(t){function o(){function t(){this.constructor=Child.constructor}return t.prototype=Parent.prototype,Child.prototype=new t,Child}"object"==typeof module?define(function(){return o}):"function"==typeof define?module.exports=o:t.inherit=o}(window);
+!function(t){function o(){function t(){this.constructor=Child.constructor}return t.prototype=Parent.prototype,Child.prototype=new t,Child}"object"==typeof module?module.exports=o:"function"==typeof define?define(function(){return o}):t.inherit=o}(window);
