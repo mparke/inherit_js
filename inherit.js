@@ -1,7 +1,13 @@
 // @preserve inheritjs, copyright Matthew Parke 2014, license https://github.com/mparke/eventsjs/blob/master/LICENSE
 (function (window) {
   
-  function inherit () {
+  /**
+  *  Chains prototypes between the given parent and child constructors
+  *  @param {function} the parent constructor
+  *  @param {function} the child constructor
+  *  @return {function} the child constructor
+  */
+  function inherit (Parent, Child) {
     function Proxy () {
       this.constructor = Child.constructor;
     };
