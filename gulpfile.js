@@ -9,7 +9,7 @@ var paths = {
 };
 
 gulp.task('clean', function(cb) {
-  del(['build'], cb);
+  del(['dist'], cb);
 });
 
 gulp.task('bump', function(){
@@ -30,12 +30,18 @@ gulp.task('bump-major', function(){
   .pipe(gulp.dest('./'));
 });
 
-gulp.task('scripts', ['clean'], function() {
+gulp.task('js', ['clean'], function() {
+  return gulp.src(paths.scripts)
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('js_min', ['clean'], function() {
   return gulp.src(paths.scripts)
     .pipe(uglify({ preserveComments: 'some' }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', [
-  'scripts'
+  'js',
+  'js_min'
 ], function(){});
